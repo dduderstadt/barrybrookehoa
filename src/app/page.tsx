@@ -24,7 +24,6 @@ export default function Home() {
         <Link href="/documents"><h2 className="text-2xl font-light inline">Documents</h2>{" "}<i className="fa-solid fa-file-pdf fa-2xl"></i></Link>
         <ul className="list-disc ml-10">
           <li className="hover:underline"><a href="/documents">Covenant Restrictions and Bylaws</a></li>
-          {/* TODO currently takes you to Documents page, should open up C&R in PDF format */}
         </ul>
         <Footer />
       </main>
