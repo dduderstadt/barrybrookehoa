@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    backgroundImage: {
+      "background-image": "url('/assets/grass-bg.jpg')",
+    }
   },
   plugins: [],
 } satisfies Config;
