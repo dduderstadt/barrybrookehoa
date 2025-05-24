@@ -13,12 +13,13 @@ export default function Documents() {
         <div className="grid grid-rows-[20px_1fr_20px] min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)] header-min-height">
             <Navbar />
             <h1 className="text-center text-2xl font-semibold pt-10">Documents</h1>
-            <div>
-                <h2 className="text-center text-xl font-semibold">Covenant &amp; Restrictions</h2>
+            <p className="text-center font-semibold pt-6">Covenants &amp; Restrictions</p>
+            <div style={{ height: '100vh' }}>
                 <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.js">
-                    <div>
-                        <Viewer fileUrl="/assets/2025candr.pdf" plugins={[defaultLayoutPluginInstance]} />
-                    </div>
+                    <Viewer
+                        fileUrl="/assets/2025candr.pdf"
+                        plugins={[defaultLayoutPluginInstance]}
+                    />
                 </Worker>
             </div>
             <Footer />
