@@ -20,7 +20,7 @@ export default function Documents() {
             <main className="grid gap-8 grid-cols-1 md:grid-cols-1 xl:grid-cols-1 bg-white p-3 sm:p-8 content-start">
                 <h2 className="text-center text-2xl font-light pt-10">Covenants &amp; Restrictions</h2>
                 <div style={{ height: '60vh' }}>
-                    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
+                    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.js">
                         <Viewer
                             fileUrl="/assets/2025candr.pdf"
                             plugins={[defaultLayoutPluginInstance]}
