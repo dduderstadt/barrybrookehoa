@@ -9,7 +9,7 @@ export default function Navbar() {
             <Link className="font-bold text-xl tracking-tight text-center pl-8" href="/">Barry Brooke HOA</Link>
             <div className="flex items-center">
                 <Link className="text-sm px-4 py-2 leading-none rounded-full hover:bg-black" href="/">Home</Link>
-                <Link className="text-sm px-4 py-2 leading-none rounded-full hover:bg-black" href="/documents">Documents</Link>
+                <Link className="text-sm px-4 py-2 leading-none rounded-full hover:bg-black" href="/documents">C&amp;Rs</Link>
                 <Link className="text-sm px-4 py-2 leading-none rounded-full hover:bg-black" href="mailto:barrybrookehoa@gmail.com">Contact Us</Link>
             </div>
         </nav>
