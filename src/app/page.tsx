@@ -25,7 +25,7 @@ export default function Home() {
         <hr className="border-t border-gray-200 my-2" />
         <div>
           <h2 className="text-2xl font-light inline">Pay Dues Online</h2>{" "}<i className="fa-solid fa-money-bill-wave fa-2xl"></i>
-          <div className="bg-[#1492df] p-4 rounded-lg text-white" style={{ marginTop: '1rem' }}>
+          <div className="bg-[#1492df] p-4 rounded-lg text-white text-[14px] md:text-[16px] leading-8" style={{ marginTop: '1rem' }}>
             <p>
               Conveniently pay your homeowner's association dues online through our <a href="https://app.autobooks.co/pay/barry-brooke-homeowners-assoc" target="_blank" rel="noopener noreferrer" className="underline font-bold">secure payment portal</a> (opens in a new tab).
               Simply click the secure payment portal link or "Pay Dues Online" at the top of the page to access the external payment page, where you can choose your preferred payment method and complete the transaction with ease.
@@ -46,7 +46,7 @@ export default function Home() {
         <hr className="border-t border-gray-200 my-2" />
         <div>
           <Link href="/documents"><h2 className="text-2xl font-light inline">Documents</h2>{" "}<i className="fa-solid fa-file-pdf fa-2xl"></i></Link>
-          <div className="bg-[#1492df] p-4 rounded-lg text-white" style={{ marginTop: '1rem' }}>
+          <div className="bg-[#1492df] p-4 rounded-lg text-white text-[14px] md:text-[16px] leading-8" style={{ marginTop: '1rem' }}>
             <ul className="list-disc ml-6">
               <li className="hover:underline"><a href="/documents">Covenant Restrictions and Bylaws</a></li>
             </ul>
