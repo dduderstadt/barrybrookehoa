@@ -11,11 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        brand: "#1492df",
       },
     },
-    backgroundImage: {
-      "background-image": "url('/assets/grass-bg.jpg')",
-    }
+
   },
   plugins: [],
 } satisfies Config;
