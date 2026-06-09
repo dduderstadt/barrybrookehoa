@@ -32,7 +32,7 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden flex flex-col pb-4">
                     <Link className="text-base px-6 py-3 w-full text-center hover:bg-white hover:text-brand" href="/" onClick={() => setIsOpen(false)}>Home</Link>
-                    <Link className="text-base px-6 py-3 w-full text-center hover:bg-white hover:text-brand" href="/documents" onClick={() => setIsOpen(false)}>C&amp;Rs</Link>
+                    <Link className="text-base px-6 py-3 w-full text-center hover:bg-white hover:text-brand" href="/documents" onClick={() => setIsOpen(false)}>Documents</Link>
                     <Link className="text-base px-6 py-3 w-full text-center hover:bg-white hover:text-brand" href="https://app.autobooks.co/pay/barry-brooke-homeowners-assoc" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Pay Dues Online</Link>
                     <Link className="text-base px-6 py-3 w-full text-center hover:bg-white hover:text-brand" href="mailto:barrybrookehoa@gmail.com" onClick={() => setIsOpen(false)}>Contact Us</Link>
                 </div>
