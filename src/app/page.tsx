@@ -65,7 +65,8 @@ export default function Home() {
         </div>
         <div className="bg-brand p-4 rounded-lg text-white text-[14px] md:text-[16px] leading-8">
           <ul className="list-disc ml-6">
-            <li className="hover:underline"><a href="/documents">Covenant Restrictions and Bylaws</a></li>
+            <li className="hover:underline"><a href="/documents/candr">Covenants &amp; Restrictions</a></li>
+            <li className="hover:underline"><a href="/documents/meeting-notes">Meeting Notes</a></li>
           </ul>
         </div>
       </main>
