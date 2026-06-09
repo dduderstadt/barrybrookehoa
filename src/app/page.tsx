@@ -27,11 +27,11 @@ export default function Home() {
           <h2 className="text-2xl font-light inline">Pay Dues Online</h2>{" "}<i className="fa-solid fa-money-bill-wave fa-2xl"></i>
           <div className="bg-[#1492df] p-4 rounded-lg text-white text-[14px] md:text-[16px] leading-8" style={{ marginTop: '1rem' }}>
             <p>
-              Conveniently pay your homeowner's association dues online through our <a href="https://app.autobooks.co/pay/barry-brooke-homeowners-assoc" target="_blank" rel="noopener noreferrer" className="underline font-bold">secure payment portal</a> (opens in a new tab).
-              Simply click the secure payment portal link or "Pay Dues Online" at the top of the page to access the external payment page, where you can choose your preferred payment method and complete the transaction with ease.
+              Conveniently pay your homeowner&apos;s association dues online through our <a href="https://app.autobooks.co/pay/barry-brooke-homeowners-assoc" target="_blank" rel="noopener noreferrer" className="underline font-bold">secure payment portal</a> (opens in a new tab).
+              Simply click the secure payment portal link or &ldquo;Pay Dues Online&rdquo; at the top of the page to access the external payment page, where you can choose your preferred payment method and complete the transaction with ease.
               We offer multiple payment options, including apple pay, bank account, and credit card, to accommodate your preferences.
               Please note that there are fees associated with each payment method, which are outlined below.
-              <br/><br/>If you want to support any particular fund, such as the "Welcome Fund" (which goes towards gifts for our new neighbors) add a note when making your payment.
+              <br/><br/>If you want to support any particular fund, such as the &ldquo;Welcome Fund&rdquo; (which goes towards gifts for our new neighbors) add a note when making your payment.
               <br/><br/>Thank you for your prompt payments and support of our community!
             </p>
             <br/>
