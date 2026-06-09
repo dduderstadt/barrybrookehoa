@@ -25,6 +25,13 @@ export default function Home() {
         <ul className="list-disc ml-10">
           <li className="hover:underline"><a href="/documents">Covenant Restrictions and Bylaws</a></li>
         </ul>
+        <div>
+          <h2 className="text-2xl font-light inline"><a href="https://app.autobooks.co/pay/barry-brooke-homeowners-assoc" target="_blank" rel="noopener noreferrer">Pay Dues Online</a></h2>{" "}<i className="fa-solid fa-money-bill-wave fa-2xl"></i>
+          <ul className="list-disc ml-10">
+            <li className="hover:underline">$1.00 debit card/bank account fee</li>
+            <li className="hover:underline">$4.00 credit card fee</li>
+          </ul>
+        </div>
         <Footer />
       </main>
     </div >
