@@ -15,9 +15,9 @@ export default function Documents() {
     // Disable the use of eval to address security concerns
 
     return (
-        <div id="docs-container" className="grid grid-rows-[20px_1fr_20px] min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
+        <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)]">
             <Navbar />
-            <main className="grid gap-8 grid-cols-1 md:grid-cols-1 xl:grid-cols-1 bg-white p-3 sm:p-8 content-start">
+            <main className="flex-grow grid gap-8 grid-cols-1 bg-white p-3 sm:p-8 content-start">
                 <h2 className="text-center text-2xl font-light pt-10">Covenants &amp; Restrictions</h2>
                 <div style={{ height: '60vh' }}>
                     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.js">
@@ -27,8 +27,8 @@ export default function Documents() {
                         />
                     </Worker>
                 </div>
-                <Footer />
             </main>
+            <Footer />
         </div>
     )
 }
