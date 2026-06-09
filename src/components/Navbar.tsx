@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +20,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle navigation menu"
                 >
-                    <i className={`fa-solid ${isOpen ? "fa-xmark" : "fa-bars"} fa-xl`} aria-hidden="true"></i>
+                    <FontAwesomeIcon icon={isOpen ? faXmark : faBars} size="xl" aria-hidden="true" />
                 </button>
                 <div className="hidden md:flex items-center mr-6">
                     <Link className="text-base px-4 py-2 leading-none rounded-full hover:bg-white hover:text-brand" href="/">Home</Link>
