@@ -144,15 +144,7 @@ Polish items that improve discoverability and load speed. Do these before any pu
 
 ---
 
-### 5.5 Add loading state for the PDF viewer page
-
-**What:** Create `src/app/documents/candr/loading.tsx` using Next.js's loading.js convention. Show a spinner or skeleton while the PDF viewer chunk loads.
-
-**File:** Create `src/app/documents/candr/loading.tsx`
-
----
-
-### 5.6 Add error boundary for the PDF viewer
+### 5.5 Add error boundary for the PDF viewer
 
 **What:** Create `src/app/documents/candr/error.tsx` using Next.js's error.js convention. Display a friendly message with a retry option if the PDF fails to load.
 
@@ -160,7 +152,7 @@ Polish items that improve discoverability and load speed. Do these before any pu
 
 ---
 
-### 5.7 Move PDF assets to cloud storage
+### 5.6 Move PDF assets to cloud storage
 
 **What:** Host PDF files on a cloud storage service (AWS S3, Cloudflare R2, or Supabase Storage) rather than bundling them with the Next.js deployment.
 
