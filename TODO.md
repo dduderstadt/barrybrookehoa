@@ -4,52 +4,6 @@ Items are ordered by priority. Each item lists what to change, which file(s) are
 
 ---
 
-## Priority 1 — Critical Code Quality Fixes
-
-Small, isolated changes with high impact. Each takes less than an hour.
-
----
-
-### 1.1 Fix the TypeScript configuration contradiction
-
-**What:** Remove `"noImplicitAny": false` from `tsconfig.json`.
-
-**File:** `tsconfig.json`
-
-**Why:** `"strict": true` already enables `noImplicitAny: true`. The explicit `false` override silently defeats it — TypeScript will not catch missing type annotations. After removing it, run `npx tsc --noEmit` and fix any newly surfaced errors.
-
----
-
-### 1.2 Remove the `nextjs` phantom dependency
-
-**What:** Run `npm uninstall nextjs`.
-
-**File:** `package.json`
-
-**Why:** The `nextjs` package (version `^0.0.3`) is a stub with no code that predates the real `next` package. It pollutes `node_modules` and misleads anyone reading `package.json`.
-
----
-
-### 1.3 Remove the `@types/pdfobject` orphan type package
-
-**What:** Run `npm uninstall @types/pdfobject`.
-
-**File:** `package.json`
-
-**Why:** There is no `pdfobject` dependency in the project and no import of it anywhere. Dead dev dependencies inflate install time.
-
----
-
-### 1.4 Add `priority` prop to the Navbar logo `<Image>`
-
-**What:** Add the `priority` prop to the `<Image>` in Navbar.
-
-**File:** `src/components/Navbar.tsx`
-
-**Why:** The logo is the largest above-the-fold image. Without `priority`, Next.js lazy-loads it, causing a layout shift (LCP degradation). Next.js also logs a warning about this in development.
-
----
-
 ## Priority 2 — Architecture Improvements
 
 Reduces duplication and establishes patterns that all future features depend on.

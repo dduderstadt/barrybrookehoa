@@ -12,7 +12,7 @@ export default function Navbar() {
         <nav className="bg-brand text-white" aria-label="Main navigation">
             <div className="flex items-center justify-between h-24">
                 <div className="flex items-center gap-4">
-                    <Image src="/header.png" alt="Barry Brooke Homeowner's Association Logo" width={100} height={100} />
+                    <Image src="/header.png" alt="Barry Brooke Homeowner's Association Logo" width={100} height={100} priority />
                     <Link className="font-semibold text-2xl tracking-tight" href="/">Barry Brooke HOA</Link>
                 </div>
                 <button
