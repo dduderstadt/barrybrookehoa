@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import { HOA_PAYMENT_URL } from "@/lib/constants";
 import { Card } from "@/components/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseChimney, faPeopleGroup, faCreditCard, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
@@ -40,7 +41,7 @@ export default function Home() {
       </div>
       <div className="bg-brand p-4 rounded-lg text-white text-[14px] md:text-[16px] leading-8">
         <p>
-          Conveniently pay your homeowner&apos;s association dues online through our <a href="https://app.autobooks.co/pay/barry-brooke-homeowners-assoc" target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white/70">secure payment portal</a> (opens in a new tab).
+          Conveniently pay your homeowner&apos;s association dues online through our <a href={HOA_PAYMENT_URL} target="_blank" rel="noopener noreferrer" className="underline font-bold hover:text-white/70">secure payment portal</a> (opens in a new tab).
           We offer multiple payment options, including Apple Pay, bank account, and credit card, to accommodate your preferences.
           Please note that there are fees associated with each payment option, which are outlined below.
         </p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { HOA_NAME } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Barry Brooke HOA",
-  description: "Barry Brooke HOA Community Website",
+  title: HOA_NAME,
+  description: `${HOA_NAME} Community Website`,
 };
 
 export default function RootLayout({

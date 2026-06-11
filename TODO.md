@@ -10,25 +10,7 @@ Reduces duplication and establishes patterns that all future features depend on.
 
 ---
 
-### 2.1 Create `src/lib/constants.ts` and centralize all repeated values
-
-**What:** Create the file with at minimum:
-
-```typescript
-export const HOA_EMAIL = 'barrybrookehoa@gmail.com';
-export const HOA_NAME = 'Barry Brooke HOA';
-export const HOA_SITE_URL = 'https://barrybrookehoa.com';
-```
-
-Replace every hardcoded occurrence in components and pages.
-
-**Files to update:** `src/lib/constants.ts` (new), `src/components/Footer.tsx`, `src/components/Navbar.tsx`, `src/app/layout.tsx`
-
-**Why:** The email appears in multiple files today. When it changes, it must be updated in multiple places, which is error-prone.
-
----
-
-### 2.2 Create a `NavLink` component to eliminate repeated nav link class strings
+### 2.1 Create a `NavLink` component to eliminate repeated nav link class strings
 
 **What:** Create `src/components/NavLink.tsx` wrapping `next/link` with the shared class string used across all nav links. Replace the repeated `<Link className="...">` usages in Navbar.
 
